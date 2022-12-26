@@ -1,7 +1,5 @@
 package com.springjenkins;
 
-import static org.junit.Assert.assertEquals;
-
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,7 +17,7 @@ class SpringJenkinsApplicationTests {
 		
 		logger.info("TestCases Starts");
 		
-		assertEquals(true,true);
+		//assertEquals(true,true);
 	}
 
 }
