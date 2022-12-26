@@ -19,7 +19,7 @@ class SpringJenkinsApplicationTests {
 		
 		logger.info("TestCases Starts");
 		
-		assertEquals(true,true);
+		//assertEquals(true,true);
 	}
 
 }
