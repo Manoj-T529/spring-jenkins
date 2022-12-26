@@ -1,7 +1,5 @@
 package com.springjenkins;
 
-import static org.junit.Assert.assertEquals;
-
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
