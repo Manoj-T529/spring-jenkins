@@ -2,21 +2,22 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('clone repo and clean it') {
             steps {
-                echo 'Build Application'
+                bat "git clone https://github.com/Manoj-T529/spring-jenkins.git"
+                bat "mvn clean -f spring-jenkins"
             }
         }
         
          stage('Test') {
             steps {
-                echo 'Test Application'
+                bat "mvn test -f spring-jenkins"
             }
         }
         
          stage('Deploy') {
             steps {
-                echo 'Deploy Application'
+                bat "mvn package -f spring-jenkins"
             }
         }
     }
